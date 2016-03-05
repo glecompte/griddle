@@ -91,7 +91,7 @@ var GridRow = React.createClass({
             var meta = _this.props.columnSettings.getColumnMetadataByName(col[0]);
 
             //todo: Make this not as ridiculous looking
-            var firstColAppend = index === 0 && _this.props.hasChildren && _this.props.showChildren === false && _this.props.useGriddleIcons ? React.createElement('span', { style: _this.props.useGriddleStyles ? { fontSize: "10px", marginRight: "5px" } : null }, _this.props.parentRowCollapsedComponent) : index === 0 && _this.props.hasChildren && _this.props.showChildren && _this.props.useGriddleIcons ? React.createElement('span', { style: _this.props.useGriddleStyles ? { fontSize: "10px" } : null }, _this.props.parentRowExpandedComponent) : "";
+            var firstColAppend = index === 0 && _this.props.hasChildren && _this.props.showChildren === false && _this.props.useGriddleIcons ? React.createElement('span', { style: _this.props.useGriddleStyles ? { fontSize: "14px", marginRight: "5px", cursor: "pointer", "paddingRight": 5 } : null }, _this.props.parentRowCollapsedComponent) : index === 0 && _this.props.hasChildren && _this.props.showChildren && _this.props.useGriddleIcons ? React.createElement('span', { style: _this.props.useGriddleStyles ? { fontSize: "10px", cursor: "pointer", "paddingRight": 5} : null }, _this.props.parentRowExpandedComponent) : "";
 
             if (index === 0 && _this.props.isChildRow && _this.props.useGriddleStyles) {
                 columnStyles = _.extend(columnStyles, { paddingLeft: 10 });

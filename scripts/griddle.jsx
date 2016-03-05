@@ -684,7 +684,9 @@ var Griddle = React.createClass({
             externalLoadingComponent: this.props.externalLoadingComponent,
             externalIsLoading: this.props.externalIsLoading,
             hasMorePages: hasMorePages,
-            onRowClick: this.props.onRowClick }));
+            onRowClick: this.props.onRowClick,
+            subComponent: this.props.subComponent,
+            api: this.props.api}));
     },
     getContentSection: function getContentSection(data, cols, meta, pagingContent, hasMorePages) {
         if (this.props.useCustomGridComponent && this.props.customGridComponent !== null) {
