@@ -686,6 +686,7 @@ var Griddle = React.createClass({
             hasMorePages: hasMorePages,
             onRowClick: this.props.onRowClick,
             subComponent: this.props.subComponent,
+            updateDetailRow: this.props.updateDetailRow,
             api: this.props.api}));
     },
     getContentSection: function getContentSection(data, cols, meta, pagingContent, hasMorePages) {

@@ -147,7 +147,7 @@ var GridTable = React.createClass({
           parentRowExpandedComponent: that.props.parentRowExpandedComponent, parentRowCollapsedComponent: that.props.parentRowCollapsedComponent,
           data: row, key: uniqueId + '-container', uniqueId: uniqueId, columnSettings: that.props.columnSettings, rowSettings: that.props.rowSettings, paddingHeight: that.props.paddingHeight,
           multipleSelectionSettings: that.props.multipleSelectionSettings,
-          rowHeight: that.props.rowHeight, hasChildren: true, tableClassName: that.props.className, onRowClick: that.props.onRowClick, subComponent: that.props.subComponent, api: that.props.api });
+          rowHeight: that.props.rowHeight, hasChildren: hasChildren, tableClassName: that.props.className, onRowClick: that.props.onRowClick, subComponent: that.props.subComponent, updateDetailRow: that.props.updateDetailRow, api: that.props.api});
       });
 
       // Add the spacer rows for nodes we're not rendering.
